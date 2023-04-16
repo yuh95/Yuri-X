@@ -41,7 +41,7 @@ notifications:message{
 
 wait(4)
 
-loadstring(game:HttpGet(("https://paste.bingner.com/paste/khemw/raw"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/yuh95/Yuri-X/main/Source%201"),true))()
 
 wait(0.5)
 
@@ -54,21 +54,21 @@ game:GetService("ReplicatedStorage").Arrow.Trail.Color = ColorSequence.new({
 
 wait(3)
 
-loadstring(game:HttpGet(("https://paste.bingner.com/paste/wc4bn/raw"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/yuh95/Yuri-X/main/Source%202"),true))()
 
 notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "[Green] Player Chams Loaded!",
+    Description = "Player Chams Loaded!",
     Icon = 6023426926
 }
 
 wait(5)
 
-loadstring(game:HttpGet(("https://pastebin.com/raw/QJmWFj1v"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/yuh95/Yuri-X/main/Source%203"),true))()
 
 notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "Mouse-Lock Loaded, Keybind 'Q'.",
+    Description = "Aimlock Loaded, Keybind 'Q'.",
     Icon = 6023426926
 }
 
@@ -160,7 +160,7 @@ for _, part in ipairs(parts) do
 		
 		notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "[White] Nitrate Ores Located!",
+    Description = "Nitrate Ores Located!",
     Icon = 6023426926
 }
 	end
@@ -185,7 +185,7 @@ wait(5)
 
 			notifications:message{
         Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-        Description = "[Grey] Stone Ores Located!",
+        Description = "Stone Ores Located!",
         Icon = 6023426926
 }
 
@@ -266,7 +266,7 @@ end)
 
 notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "[Purple] TC Chams Loaded, Keybind 'T'.",
+    Description = "TC Chams Loaded, Keybind 'T'.",
     Icon = 6023426926
 }
 
@@ -291,7 +291,7 @@ for _, part in ipairs(parts) do
 
 	    notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "[Yellow] Military Crates Located!",
+    Description = "Military Crates Located!",
     Icon = 6023426926
 }
         end
@@ -335,7 +335,7 @@ for _, part in ipairs(parts) do
 		
 		notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "[Yellow] Part Crates Located!",
+    Description = "Packages Located!",
     Icon = 6023426926
 }
 	end
