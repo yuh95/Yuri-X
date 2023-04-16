@@ -183,6 +183,46 @@ workspace.DescendantAdded:Connect(onPartAdded)
 
 wait(5)
 
+-- Iron Ores </>
+
+local parts = workspace:GetDescendants()
+local meshes = {}
+for _, part in ipairs(parts) do
+	if part:IsA("MeshPart") and part.BrickColor == BrickColor.new("Burlap") and part.Material == Enum.Material.Slate then
+		local IronEsp = Instance.new("BoxHandleAdornment")
+		IronEsp.Adornee = part
+		IronEsp.AlwaysOnTop = true
+		IronEsp.ZIndex = 0
+		IronEsp.Size = part.Size
+		IronEsp.Transparency = 0.3
+		IronEsp.Color = BrickColor.new("Burlap")
+		IronEsp.Parent = workspace
+		
+		notifications:message{
+    Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
+    Description = "Iron Ores Located!",
+    Icon = 6023426926
+}
+	end
+end
+
+local function onPartAdded(part)
+	if part:IsA("MeshPart") and part.BrickColor == BrickColor.new("Burlap") and part.Material == Enum.Material.Slate then
+		local UpdateIronEsp = Instance.new("BoxHandleAdornment")
+		UpdateIronEsp.Adornee = part
+		UpdateIronEsp.AlwaysOnTop = true
+		UpdateIronEsp.ZIndex = 0
+		UpdateIronEsp.Size = part.Size
+		UpdateIronEsp.Transparency = 0.3
+		UpdateIronEsp.Color = BrickColor.new("Burlap")
+		UpdateIronEsp.Parent = workspace
+	end
+end
+
+workspace.DescendantAdded:Connect(onPartAdded)
+
+wait(5)
+
 			notifications:message{
         Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
         Description = "Stone Ores Located!",
