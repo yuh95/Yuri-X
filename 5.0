@@ -1,17 +1,12 @@
 -- New 5.0 Devs: ssvz#0001 & killsondcintha314#5008
 -- Original Dev: k9#0001
 
-local player = game.Players.LocalPlayer
-local groupId = 15212924
 
-local isMember = player:IsInGroup(groupId)
 
-local kickMessages = {
-    "You Have To Be In The Group!",
-    "Yuri X On Top!"
-}
 
-if isMember then
+
+
+
 
 local notifications = loadstring(game:HttpGet(("https://pastebin.com/raw/gTvmWhEe"),true))()
 
@@ -917,7 +912,3 @@ game.Players.PlayerRemoving:Connect(function(player)
     Description = (player.DisplayName .. " Left The Server!"),
 }
 end)
-else
-    local kickMessage = kickMessages[math.random(#kickMessages)]
-    player:Kick(kickMessage)
-end
