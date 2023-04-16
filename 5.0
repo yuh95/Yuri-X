@@ -7,10 +7,7 @@ local groupId = 15212924
 local isMember = player:IsInGroup(groupId)
 
 local kickMessages = {
-    "Boshkalay bong bong!",
-    "Fuck a beat, I was Tryna beat a case ~ Tay-K",
-    "Maybe Join the Group?",
-    "Imagine Getting Raided LMFAO!"
+    "You Have To Be In The Group! Yuri X On Top!"
 }
 
 if isMember then
