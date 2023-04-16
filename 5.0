@@ -7,7 +7,8 @@ local groupId = 15212924
 local isMember = player:IsInGroup(groupId)
 
 local kickMessages = {
-    "You Have To Be In The Group! Yuri X On Top!"
+    "You Have To Be In The Group!",
+    "Yuri X On Top!"
 }
 
 if isMember then
