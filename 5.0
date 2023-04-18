@@ -12,7 +12,7 @@ local notifications = loadstring(game:HttpGet(("https://pastebin.com/raw/gTvmWhE
 
 notifications:message{
     Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
-    Description = "Updated, April 15 2023!",
+    Description = "Updated, April 18 2023!",
     Icon = 6023426926
 }
 
