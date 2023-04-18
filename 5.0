@@ -307,6 +307,32 @@ notifications:message{
 
 wait(5)
 
+notifications:message{
+    Title = "Yuri <font color='rgb(148, 0, 211)'>X</font> - v5.0",
+    Description = "Military Crates Located!",
+    Icon = 6023426926
+}
+
+local function onPartAdded(part)
+    if part:IsA("Part") and part.BrickColor == BrickColor.new("Linen") and part.Material == Enum.Material.WoodPlanks then
+        local parent = part.Parent
+        if parent and parent:IsA("Model") and #parent:GetChildren() == 2 then
+            local MilitaryEsp = Instance.new("BoxHandleAdornment")
+            MilitaryEsp.Adornee = part
+            MilitaryEsp.AlwaysOnTop = true
+            MilitaryEsp.ZIndex = 0
+            MilitaryEsp.Size = part.Size
+            MilitaryEsp.Transparency = 0.3
+            MilitaryEsp.Color = BrickColor.new("Bright yellow")
+            MilitaryEsp.Parent = workspace
+        end
+    end
+end
+
+workspace.DescendantAdded:Connect(onPartAdded)
+
+wait(5)
+
 -- Part Crates </>
 
 local parts = workspace:GetDescendants()
