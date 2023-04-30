@@ -18,7 +18,7 @@ notifications:message{
 
 wait(5)
 
-setclipboard('discord.gg/G9DbQcBZ4Q')
+setclipboard('discord.gg/3500')
 
 notifications:message{
     Title = "<font color='rgb(148, 0, 211)'>Official</font> Discord Server",
